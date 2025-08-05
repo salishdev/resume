@@ -39,11 +39,11 @@
   \begin{rSection}{Work Experience}
 
     <%#experience%>
-        \begin{rWorkHistoryItem}{<% position %>}{<% company %>}{<% duration %>}
-      <%#accomplishments%>
-            \item <%.%>
-      <%/accomplishments %>
-        \end{rWorkHistoryItem}
+      \begin{rWorkHistoryItem}{<% position %>}{<% company %>}{<% duration %>}
+        <%#accomplishments%>
+          \item <%.%>
+        <%/accomplishments %>
+      \end{rWorkHistoryItem}
     <%/experience%>
 
   \end{rSection}
@@ -82,14 +82,20 @@
 
 <%#projects.length%>
  \begin{rSection}{Projects}
-  <%#projects%>
 
-     \textbf{<% role %>}, {<% name %>} <%#link%>(\href{<% url %>}{<% title %>})<%/link%> \hfill {MMM YYYY --- MMM YYYY}
-     \begin{itemize}
-         \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used
-         \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used
-     \end{itemize}
-  <%/projects%>
+    <%#projects%>
+      \textbf{<% role %>}, {<% name %>} <%#link%>(\href{<% url %>}{<% title %>})<%/link%> \hfill {<% duration %>}
+
+      <%#accomplishments.length%>
+        \begin{itemize}
+          <%#accomplishments%>
+            \item <%.%>
+          <%/accomplishments%>
+        \end{itemize}
+      <%/accomplishments.length%>
+
+    <%/projects%>
+
  \end{rSection}
 <%/projects.length%>
 
@@ -97,13 +103,16 @@
 % Awards
 %----------------------------------------------------------------------------------------
 
-% \begin{rSection}{Awards}
+<%#awards.length%>
+  \begin{rSection}{Awards}
 
-%     \begin{itemize}
-%         \item \textbf{ABC Hackathon} --- 1st place \hfill {MMM YYYY --- MMM YYYY}
-%         \item \textbf{XYZ Competition} --- 2nd place \hfill {MMM YYYY --- MMM YYYY}
-%     \end{itemize}
+    <%#awards%>
+      \begin{itemize}
+          \item \textbf{<% title %>} --- <% description %> \hfill {<% duration %>}
+      \end{itemize}
+    <%/awards%>
 
-% \end{rSection}
+  \end{rSection}
+<%/awards.length%>
 
 \end{document}
