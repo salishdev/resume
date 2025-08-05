@@ -2,6 +2,7 @@ name: Jeremy Jones
 contact:
   location: Seattle, WA, US
   phone: +1 (206) 485-6906
+  phone_clean: +12064856906
   email: banjeremy@gmail.com
   website: salish.dev
   github: github.com/banjeremy
@@ -73,3 +74,32 @@ education:
   - degree: Bachelor of Science, Computer Science
     institution: University of Southern Mississippi
     duration: 2008 --- 2012
+
+projects:
+  - role: Role
+    name: Project Name
+    link:
+      title: myproject.com
+      url: https://myproject.com
+    duration: MMM YYYY --- MMM YYYY
+    accomplishments:
+      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
+      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
+  - role: Role
+    name: Project Name
+    link:
+      title: myproject.com
+      url: https://myproject.com
+    duration: MMM YYYY --- MMM YYYY
+    accomplishments:
+      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
+      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
+  - role: Role
+    name: Project Name
+    link:
+      title: myproject.com
+      url: https://myproject.com
+    duration: MMM YYYY --- MMM YYYY
+    accomplishments:
+      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
+      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
