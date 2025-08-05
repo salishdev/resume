@@ -70,9 +70,15 @@
 
 <%#education.length%>
   \begin{rSection}{Education}
+
     <%#education%>
-      \textbf{<% degree %>}, <% institution %> \hfill {<% duration %>}
+      \begin{rEducationItem}{<% degree %>}{<% institution %>}{<% duration %>}
+        <%#accomplishments%>
+          \item <%.%>
+        <%/accomplishments %>
+      \end{rEducationItem}
     <%/education%>
+
   \end{rSection}
 <%/education.length%>
 
@@ -81,22 +87,17 @@
 %----------------------------------------------------------------------------------------
 
 <%#projects.length%>
- \begin{rSection}{Projects}
+  \begin{rSection}{Projects}
 
     <%#projects%>
-      \textbf{<% role %>}, {<% name %>} <%#link%>(\href{<% url %>}{<% title %>})<%/link%> \hfill {<% duration %>}
-
-      <%#accomplishments.length%>
-        \begin{itemize}
-          <%#accomplishments%>
-            \item <%.%>
-          <%/accomplishments%>
-        \end{itemize}
-      <%/accomplishments.length%>
-
+      \begin{rWorkHistoryItem}{<% role %>}{<% name %>}{<% duration %>}
+        <%#accomplishments%>
+          \item <%.%>
+        <%/accomplishments %>
+      \end{rWorkHistoryItem}
     <%/projects%>
 
- \end{rSection}
+  \end{rSection}
 <%/projects.length%>
 
 %----------------------------------------------------------------------------------------
@@ -107,9 +108,8 @@
   \begin{rSection}{Awards}
 
     <%#awards%>
-      \begin{itemize}
-          \item \textbf{<% title %>} --- <% description %> \hfill {<% duration %>}
-      \end{itemize}
+      \begin{rAwardItem}{<% title %>}{<% description %>}{<% duration %>}
+      \end{rAwardItem}
     <%/awards%>
 
   \end{rSection}

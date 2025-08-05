@@ -85,24 +85,6 @@ projects:
     accomplishments:
       - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
       - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
-  - role: Role
-    name: Project Name
-    link:
-      title: myproject.com
-      url: https://myproject.com
-    duration: MMM YYYY --- MMM YYYY
-    accomplishments:
-      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
-      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
-  - role: Role
-    name: Project Name
-    link:
-      title: myproject.com
-      url: https://myproject.com
-    duration: MMM YYYY --- MMM YYYY
-    accomplishments:
-      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
-      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
 
 awards:
   - title: ABC Hackathon
