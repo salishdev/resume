@@ -149,6 +149,8 @@
 
 \newenvironment{rEducationItem}[3]{ % 3 input arguments - degree, institution, duration
   {\bf #1} {$\cdot$ #2} \dotfill #3 % Bold degree name and date on the right
+  \smallskip
+  \vspace{0.5em}
 }
 
 \newenvironment{rAwardItem}[3]{ % 3 input arguments - title, description, duration

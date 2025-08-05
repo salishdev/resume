@@ -55,11 +55,9 @@
 
 <%#skills.length%>
   \begin{rSection}{Skills}
-      \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-        <%#skills%>
-          <%category%> & <% items %> \\
-        <%/skills%>
-      \end{tabular}
+    <%#skills%>
+      \textbf{<%category%>:} <% items %> \\[0.5em]
+    <%/skills%>
   \end{rSection}
 <%/skills.length%>
 
