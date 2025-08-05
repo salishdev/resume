@@ -1,0 +1,73 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'resume.tex'
+      - '.github/workflows/build-resume.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'resume.tex'
+      - '.github/workflows/build-resume.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: kjarosh/latex:2024.2
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install additional fonts
+      run: |
+        tlmgr update --self
+        tlmgr install \
+          libertine \
+          inconsolata \
+          lato \
+          mweights \
+          fontaxes \
+          libertinus \
+          libertinus-fonts \
+          libertinus-otf \
+          ebgaramond \
+          ebgaramond-maths \
+          crimson \
+          crimsonpro \
+          cochineal \
+          newtx \
+          newpx \
+          sourceserifpro \
+          sourcesanspro
+    
+    - name: Compile resume
+      run: |
+        lualatex --interaction=nonstopmode --file-line-error resume.tex
+        # Run twice to ensure proper references
+        lualatex --interaction=nonstopmode --file-line-error resume.tex
+    
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: resume
+        path: resume.pdf
+        
+    - name: Create Release
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: resume-${{ github.run_number }}
+        name: Resume Build ${{ github.run_number }}
+        files: resume.pdf
+        body: |
+          Automated build of resume.pdf
+          
+          Build: ${{ github.run_number }}
+          Commit: ${{ github.sha }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

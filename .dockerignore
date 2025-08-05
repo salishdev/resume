@@ -1,0 +1,14 @@
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+.git
+.github
+node_modules
+.DS_Store
