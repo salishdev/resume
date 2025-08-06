@@ -83,12 +83,12 @@
 
 \newenvironment{rEducationItem}[3]{ % 3 input arguments - degree, institution, duration
   \noindent\textbf{#1} · #2 \hfill #3 % Bold degree name and date on the right
-  % \vspace{-0.25em} % uncomment for a little more space after work history items
+  \vspace{-0.25em}
 }
 
 \newenvironment{rSkillItem}[2]{ % 2 input arguments - category, items
   \noindent\textbf{#1:} #2
-  \vspace{-0.25em} % uncomment for a little more space after work history items
+  \vspace{-0.25em}
 }
 
 \newenvironment{rAwardItem}[3]{ % 3 input arguments - title, description, duration
