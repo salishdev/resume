@@ -1,7 +1,7 @@
 % !TEX program = lualatex
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.4 in,top=0in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.4 in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
 
 %----------------------------------------------------------------------------------------
 % Contact Information
@@ -11,7 +11,7 @@
 
 \begingroup
 
-\vspace*{-1em} % adjust to taste
+\vspace*{-2em}
 {\Huge \textbf{Jeremy Jones}} \hfill
 \vspace*{-1em}
 \normalsize{\href{mailto:jeremy@salish.dev}{jeremy@salish.dev} %
@@ -76,11 +76,14 @@
 %----------------------------------------------------------------------------------------
 
   \begin{rSection}{Skills}
-      \textbf{Programming Languages:} \hfill Typescript, HTML, CSS, SQL, Bash, Python \\[0.25em]
-      \textbf{Libraries \& Frameworks:} \hfill React, Redux, Tailwind, Node.js, GraphQL, Prisma \\[0.25em]
-      \textbf{Tools \& Platforms:} \hfill AWS, Docker, Terraform, PostgreSQL, Apollo \\[0.25em]
+      \begin{rSkillItem}{Programming Languages}{Typescript, HTML, CSS, SQL, Bash, Python}
+      \end{rSkillItem}
+      \begin{rSkillItem}{Libraries \& Frameworks}{React, Redux, Tailwind, Node.js, GraphQL, Prisma}
+      \end{rSkillItem}
+      \begin{rSkillItem}{Tools \& Platforms}{AWS, Docker, Terraform, PostgreSQL, Apollo}
+      \end{rSkillItem}
+    \vspace{0.25em}
   \end{rSection}
-\vspace{0.25em}
 
 
 %----------------------------------------------------------------------------------------
@@ -111,13 +114,5 @@
 % Awards
 %----------------------------------------------------------------------------------------
 
-  \begin{rSection}{Awards}
-
-      \begin{rAwardItem}{ABC Hackathon}{1st place}{MMM YYYY --- MMM YYYY}
-      \end{rAwardItem}
-      \begin{rAwardItem}{XYZ Competition}{2nd place}{MMM YYYY --- MMM YYYY}
-      \end{rAwardItem}
-
-  \end{rSection}
 
 \end{document}

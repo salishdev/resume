@@ -81,21 +81,14 @@
   % \vspace{0.25em} % uncomment for a little more space after work history items
 }
 
-% \newenvironment{rEducationItem}[3]{ % 3 input arguments - degree, institution, duration
-%   {\bf #1} {$\cdot$ #2} \hfill #3 % Bold degree name and date on the right
-%   \smallskip
-%   % \vspace{0.25em} % uncomment for a little more space after work history items
-% }
+\newenvironment{rEducationItem}[3]{ % 3 input arguments - degree, institution, duration
+  \noindent\textbf{#1} · #2 \hfill #3 % Bold degree name and date on the right
+  % \vspace{-0.25em} % uncomment for a little more space after work history items
+}
 
-\newenvironment{rEducationItem}[3]{
-  \noindent\textbf{#1} · #2 \hfill #3
-  \vspace{-0.25em}
-
-  \begin{itemize}
-    \setlength\itemsep{-0.25em}
-}{
-  \end{itemize}
-  % \vspace{0.25em} % uncomment for a little more space after work history items
+\newenvironment{rSkillItem}[2]{ % 2 input arguments - category, items
+  \noindent\textbf{#1:} #2
+  \vspace{-0.25em} % uncomment for a little more space after work history items
 }
 
 \newenvironment{rAwardItem}[3]{ % 3 input arguments - title, description, duration
@@ -108,3 +101,5 @@
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section
 \def\nameskip{\medskip} % The space after your name at the top
 \def\sectionskip{\medskip} % The space after the heading section
+
+\def\dotrule{\hdashrule{4cm}{1pt}{1pt}}

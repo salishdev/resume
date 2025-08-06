@@ -24,7 +24,8 @@ FROM kjarosh/latex:2025.1-small AS latex
 RUN tlmgr update --self && \
   tlmgr install \
   enumitem \
-  ebgaramond
+  ebgaramond \
+  dashrule
 
 
 # Create working directory
