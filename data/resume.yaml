@@ -1,22 +1,32 @@
-name: Jeremy Jones
-contact:
-  location: Seattle, WA, US
+basics:
+  name: Jeremy Jones
+  label: Fullstack Software Engineer
   email: jeremy@salish.dev
-  website: salish.dev
-  github: github.com/salishdev
-  linkedin: linkedin.com/in/salishdev
+  url: https://salish.dev
+  summary: Fullstack Software Engineer and Team Leader with 14 years of experience developing scalable apps and services for the web and mobile.
+  location:
+    city: Seattle
+    region: WA
+    countryCode: US
+  profiles:
+    - network: GitHub
+      username: salishdev
+      url: https://github.com/salishdev
+    - network: LinkedIn
+      username: salishdev
+      url: https://linkedin.com/in/salishdev
 
-summary: Fullstack Software Engineer and Team Leader with 14 years of experience developing scalable apps and services for the web and mobile.
-
-experience:
+work:
   - position: Software Engineer
-    company: Lululemon
-    duration: Oct 2024 --- Present
-    description: TODO Proident labore labore qui aliquip aute labore anim qui ipsum cupidatat deserunt aliqua.
-    accomplishments:
+    name: Lululemon
+    startDate: "2024-10"
+    endDate: Present
+    summary: TODO Proident labore labore qui aliquip aute labore anim qui ipsum cupidatat deserunt aliqua.
+    highlights:
       - Exercitation nostrud dolor ad ullamco elit incididunt qui sint mollit sint aliquip adipisicing incididunt reprehenderit ad.
       - Dolor proident aliqua non occaecat sit cupidatat non non sint qui esse cupidatat ullamco et ut.
       - Commodo voluptate proident Lorem non et do amet voluptate irure excepteur enim nulla laboris dolore.
+    # Additional data not in JSON Resume schema
     technologies:
       - AWS
       - GraphQL
@@ -24,12 +34,14 @@ experience:
       - Datadog
 
   - position: Founder
-    company: Astere Software
-    duration: Apr 2024 --- Present
-    description: Designed, developed, published, and marketed productivity apps for iOS and macOS
-    accomplishments:
+    name: Astere Software
+    startDate: "2024-04"
+    endDate: Present
+    summary: Designed, developed, published, and marketed productivity apps for iOS and macOS
+    highlights:
       - Worked with clients to develop custom web solutions, improving user experience and functionality and delivering high-quality web projects on time and within budget
       - "Published native macOS app to the App Store. TODO: success metrics, purchases, etc"
+    # Additional data not in JSON Resume schema
     technologies:
       - Swift
       - SwiftUI
@@ -41,14 +53,16 @@ experience:
       - GraphQL
 
   - position: Founding Software Engineer
-    company: Majr
-    duration: Nov 2021 --- April 2024
-    description: Conceptualized, architected, and built the company's core technology and product across multiple endpoints including web and mobile
-    accomplishments:
+    name: Majr
+    startDate: "2021-11"
+    endDate: "2024-04"
+    summary: Conceptualized, architected, and built the company's core technology and product across multiple endpoints including web and mobile
+    highlights:
       - Led the development of a full stack authoring canvas, enabling artists to craft and share their stories on an immersive mobile platform
       - Developed and maintained robust GraphQL API including schemas, resolvers, and queries, surfacing a rich data model in real-time to mobile and web endpoints
       - Designed and deployed scalable cloud infrastructure using DevOps best practices and modern infrastructure as code tools
       - Architected a video-on-demand streaming platform with custom encoding pipelines
+    # Additional data not in JSON Resume schema
     technologies:
       - React
       - Typescript
@@ -61,13 +75,15 @@ experience:
       - iOS
 
   - position: Staff Software Engineer
-    company: HCA Healthcare
-    duration: May 2019 --- Nov 2021
-    description: Led a team to develop a workforce planning solution using React, Typescript, and Node.js. Engineered a cloud data platform and mentored engineers.
-    accomplishments:
+    name: HCA Healthcare
+    startDate: "2019-05"
+    endDate: "2021-11"
+    summary: Led a team to develop a workforce planning solution using React, Typescript, and Node.js. Engineered a cloud data platform and mentored engineers.
+    highlights:
       - Headed the development of a workforce planning application, successfully deploying to the enterprise and replacing tedious and error-prone processes
       - Engineered a comprehensive data platform, architecting robust data pipelines from on-premises data warehouse to cloud data lake, enabling efficient application workloads, and advanced analytics and data science capabilities
       - Created a GraphQL API to expose HR data to internal consumers, aggregating multiple sources under a single endpoint and enabling self-service and discoverability, reducing ad hoc requests and one-off reports
+    # Additional data not in JSON Resume schema
     technologies:
       - React
       - Typescript
@@ -79,14 +95,16 @@ experience:
       - Spark
 
   - position: Senior Software Engineer
-    company: HCA Healthcare
-    duration: Dec 2016 --- May 2019
-    description: Enhanced a patient portal for over 100,000 users and created a streaming ingestion solution for electronic health records. Developed CI/CD pipelines for AI apps running on Kubernetes.
-    accomplishments:
+    name: HCA Healthcare
+    startDate: "2016-12"
+    endDate: "2019-05"
+    summary: Enhanced a patient portal for over 100,000 users and created a streaming ingestion solution for electronic health records. Developed CI/CD pipelines for AI apps running on Kubernetes.
+    highlights:
       - Contributed to the development of an enterprise-scale patient portal application, enhancing system performance and user accessibility for over 100,000 active users
       - Created a streaming ingestion solution for parsing and routing electronic health records from hospitals across the US
       - Migrated legacy APIs to GraphQL to reduce server load and improve maintainability
       - Developed CI/CD pipelines, facilitating seamless deployments to both on-premises and cloud infrastructure
+    # Additional data not in JSON Resume schema
     technologies:
       - Python
       - DevOps
@@ -95,12 +113,14 @@ experience:
       - Kubernetes
 
   - position: Application Engineer
-    company: Built Technologies
-    duration: Aug 2015 --- Dec 2016
-    description: Transitioned a monolithic web application to a microservices architecture on AWS using Kinesis and Lambda. Updated legacy web app with responsive styling.
-    accomplishments:
+    name: Built Technologies
+    startDate: "2015-08"
+    endDate: "2016-12"
+    summary: Transitioned a monolithic web application to a microservices architecture on AWS using Kinesis and Lambda. Updated legacy web app with responsive styling.
+    highlights:
       - Facilitated the transition from a monolithic web application to a highly scalable and loosely coupled microservices architecture, dramatically improving system modularity, scalability, and resilience
       - Retrofitted legacy web app with updated views and responsive styling, making mobile access feasible and saving the company from a costly rewrite
+    # Additional data not in JSON Resume schema
     technologies:
       - React
       - PHP
@@ -110,11 +130,13 @@ experience:
       - Lambda
 
   - position: Software Developer
-    company: Communication Components
-    duration: Jul 2013 --- Aug 2015
-    description: Designed and implemented a caching solution, reducing request times from 4s to under 100ms.
-    accomplishments:
+    name: Communication Components
+    startDate: "2013-07"
+    endDate: "2015-08"
+    summary: Designed and implemented a caching solution, reducing request times from 4s to under 100ms.
+    highlights:
       - Created online printing service and e-commerce platform allowing users to design and purchase signage, billboards, and other large-format print products
+    # Additional data not in JSON Resume schema
     technologies:
       - HTML
       - CSS
@@ -124,10 +146,12 @@ experience:
       - SQL Server
 
   - position: Software Developer
-    company: Deloitte
-    duration: Jul 2012 --- Jul 2013
-    accomplishments:
+    name: Deloitte
+    startDate: "2012-07"
+    endDate: "2013-07"
+    highlights:
       - Worked with clients to design and build a cross-platform mobile application for restaurant management and reservations
+    # Additional data not in JSON Resume schema
     technologies:
       - HTML
       - CSS
@@ -137,28 +161,47 @@ experience:
       - SQL Server
 
 skills:
-  - category: Programming Languages
-    items: Typescript, HTML, CSS, SQL, Bash, Python
-  - category: Libraries \& Frameworks
-    items: React, Redux, Tailwind, Node.js, GraphQL, Prisma
-  - category: Tools \& Platforms
-    items: AWS, Docker, Terraform, PostgreSQL, Apollo
+  - name: Programming Languages
+    keywords:
+      - Typescript
+      - HTML
+      - CSS
+      - SQL
+      - Bash
+      - Python
+  - name: Libraries & Frameworks
+    keywords:
+      - React
+      - Redux
+      - Tailwind
+      - Node.js
+      - GraphQL
+      - Prisma
+  - name: Tools & Platforms
+    keywords:
+      - AWS
+      - Docker
+      - Terraform
+      - PostgreSQL
+      - Apollo
 
 education:
-  - degree: Master of Computer Science
+  - studyType: Master of Computer Science
     institution: University of Illinois Urbana-Champaign
-    duration: 2019 --- 2021
+    startDate: "2019"
+    endDate: "2021"
+    area: Computer Science
 
-  - degree: Bachelor of Science, Computer Science
+  - studyType: Bachelor of Science
     institution: University of Southern Mississippi
-    duration: 2008 --- 2012
+    startDate: "2008"
+    endDate: "2012"
+    area: Computer Science
 
 projects:
-  - role: Creator
-    name: Radtimer
-    link:
-      title: RadTimer
-      url: https://salish.dev/apps/radtimer
-    duration: MMM YYYY --- MMM YYYY
-    accomplishments:
+  - name: RadTimer
+    url: https://salish.dev/apps/radtimer
+    highlights:
       - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
+    # Additional data not in JSON Resume schema
+    role: Creator
