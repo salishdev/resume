@@ -22,6 +22,11 @@
 
 \LoadClass[10pt,letterpaper]{article} % Font size and paper type
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cmap}
+\usepackage{enumitem}
+
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
@@ -38,68 +43,10 @@
   urlcolor=black,
 }
 
+\setlist[itemize]{left=0.25em,labelsep=0.5em}
+
 \raggedright % Prevent hyphenation when line breaks occur within a word
 \pagestyle{empty} % Suppress page numbers
-
-%----------------------------------------------------------------------------------------
-%	HEADINGS COMMANDS: Commands for printing name and address
-%----------------------------------------------------------------------------------------
-
-\def \name#1{\def\@name{#1}} % Defines the \name command to set name
-\def \@name {} % Sets \@name to empty by default
-
-\def \addressSep {$\mid$} % Set default address separator
-
-% One, two or three address lines can be specified
-\let \@addressone \relax
-\let \@addresstwo \relax
-\let \@addressthree \relax
-
-% \address command can be used to set the first, second, and third address (last 2 optional)
-\def \address #1{
-  \@ifundefined{@addresstwo}{
-    \def \@addresstwo {#1}
-  }{
-    \@ifundefined{@addressthree}{
-      \def \@addressthree {#1}
-    }{
-      \def \@addressone {#1}
-    }}
-}
-
-% \printaddress is used to style an address line (given as input)
-\def \printaddress #1{
-\begingroup
-\def \\ {\addressSep\ }
-\leftline{#1}
-\endgroup
-\par
-\addressskip
-}
-
-% \printname is used to print the name as a page header
-\def \printname {
-  \begingroup
-  \namesize\bf \@name \hfil
-  \nameskip\break
-  \endgroup
-}
-
-%----------------------------------------------------------------------------------------
-%	PRINT THE HEADING LINES
-%----------------------------------------------------------------------------------------
-
-\let\ori@document=\document
-\renewcommand{\document}{
-  \ori@document  % Begin document
-  \printname % Print the name specified with \name
-  \@ifundefined{@addressone}{}{ % Print the first address if specified
-    \printaddress{\@addressone}}
-  \@ifundefined{@addresstwo}{}{ % Print the second address if specified
-    \printaddress{\@addresstwo}}
-  \@ifundefined{@addressthree}{}{ % Print the third address if specified
-    \printaddress{\@addressthree}}
-}
 
 %----------------------------------------------------------------------------------------
 %	SECTION FORMATTING
@@ -123,38 +70,36 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
-{\bf #1} \hfill {#2} % Bold company name and date on the right
-\ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-\\
-{\em #3} \hfill {\em #4} % Italic job title and location
-}\smallskip
-\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-  \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
-\end{list}
-\vspace{0.5em} % Some space after the list of bullet points
+\newenvironment{rWorkHistoryItem}[3]{
+  \noindent\textbf{#1} · #2 \hfill #3
+  \vspace{-0.25em}
+
+  \begin{itemize}
+    \setlength\itemsep{-0.25em}
+}{
+  \end{itemize}
+  % \vspace{0.25em} % uncomment for a little more space after work history items
 }
 
-\newenvironment{rWorkHistoryItem}[3]{ % 4 input arguments - company name, year(s) employed, job title and location
-  {\bf #1} {$\cdot$ #2} \dotfill #3 % Bold company name and date on the right
-  \smallskip
+% \newenvironment{rEducationItem}[3]{ % 3 input arguments - degree, institution, duration
+%   {\bf #1} {$\cdot$ #2} \hfill #3 % Bold degree name and date on the right
+%   \smallskip
+%   % \vspace{0.25em} % uncomment for a little more space after work history items
+% }
 
-  \begin{list}{$\bullet$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-    \itemsep -0.25em \vspace{-0.5em} % Compress items in list together for aesthetics
-    }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
-}
+\newenvironment{rEducationItem}[3]{
+  \noindent\textbf{#1} · #2 \hfill #3
+  \vspace{-0.25em}
 
-\newenvironment{rEducationItem}[3]{ % 3 input arguments - degree, institution, duration
-  {\bf #1} {$\cdot$ #2} \dotfill #3 % Bold degree name and date on the right
-  \smallskip
-  \vspace{0.5em}
+  \begin{itemize}
+    \setlength\itemsep{-0.25em}
+}{
+  \end{itemize}
+  % \vspace{0.25em} % uncomment for a little more space after work history items
 }
 
 \newenvironment{rAwardItem}[3]{ % 3 input arguments - title, description, duration
-  {\bf #1} {$\cdot$ #2} \dotfill #3 % Bold company name and date on the right
+  {\bf #1} {$\cdot$ #2} \hfill #3 % Bold company name and date on the right
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip

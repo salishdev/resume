@@ -1,19 +1,17 @@
 name: Jeremy Jones
 contact:
   location: Seattle, WA, US
-  phone: +1 (206) 485-6906
-  phone_clean: +12064856906
-  email: banjeremy@gmail.com
+  email: jeremy@salish.dev
   website: salish.dev
-  github: github.com/banjeremy
-  linkedin: linkedin.com/in/banjeremy
+  github: github.com/salishdev
+  linkedin: linkedin.com/in/salishdev
 
 summary: Fullstack Software Engineer and Team Leader with 14 years of experience developing scalable apps and services for the web and mobile.
 
 experience:
   - position: Founder
     company: Astere Software
-    duration: April 2024 --- Present
+    duration: Apr 2024 --- Present
     accomplishments:
       - Worked with clients to develop custom web solutions, improving user experience and functionality and delivering high-quality web projects on time and within budget
 

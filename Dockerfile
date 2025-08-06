@@ -23,25 +23,9 @@ FROM kjarosh/latex:2025.1-small AS latex
 # Install additional fonts for resumes
 RUN tlmgr update --self && \
   tlmgr install \
-  libertine \
-  inconsolata \
-  lato \
-  mweights \
-  fontaxes \
-  libertinus \
-  # caslon \
-  # gotham \
-  libertinus-fonts \
-  libertinus-otf \
-  ebgaramond \
-  ebgaramond-maths \
-  crimson \
-  crimsonpro \
-  cochineal \
-  newtx \
-  newpx \
-  sourceserifpro \
-  sourcesanspro
+  enumitem \
+  ebgaramond
+
 
 # Create working directory
 WORKDIR /data
