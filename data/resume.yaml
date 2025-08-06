@@ -19,8 +19,7 @@ basics:
 work:
   - position: Software Engineer
     name: Lululemon
-    startDate: "2024-10"
-    endDate: Present
+    startDate: "2024-10-01"
     summary: TODO Proident labore labore qui aliquip aute labore anim qui ipsum cupidatat deserunt aliqua.
     highlights:
       - Exercitation nostrud dolor ad ullamco elit incididunt qui sint mollit sint aliquip adipisicing incididunt reprehenderit ad.
@@ -35,8 +34,7 @@ work:
 
   - position: Founder
     name: Astere Software
-    startDate: "2024-04"
-    endDate: Present
+    startDate: "2024-04-01"
     summary: Designed, developed, published, and marketed productivity apps for iOS and macOS
     highlights:
       - Worked with clients to develop custom web solutions, improving user experience and functionality and delivering high-quality web projects on time and within budget
@@ -54,8 +52,8 @@ work:
 
   - position: Founding Software Engineer
     name: Majr
-    startDate: "2021-11"
-    endDate: "2024-04"
+    startDate: "2021-11-01"
+    endDate: "2024-04-01"
     summary: Conceptualized, architected, and built the company's core technology and product across multiple endpoints including web and mobile
     highlights:
       - Led the development of a full stack authoring canvas, enabling artists to craft and share their stories on an immersive mobile platform
@@ -76,8 +74,8 @@ work:
 
   - position: Staff Software Engineer
     name: HCA Healthcare
-    startDate: "2019-05"
-    endDate: "2021-11"
+    startDate: "2019-05-01"
+    endDate: "2021-11-01"
     summary: Led a team to develop a workforce planning solution using React, Typescript, and Node.js. Engineered a cloud data platform and mentored engineers.
     highlights:
       - Headed the development of a workforce planning application, successfully deploying to the enterprise and replacing tedious and error-prone processes
@@ -96,8 +94,8 @@ work:
 
   - position: Senior Software Engineer
     name: HCA Healthcare
-    startDate: "2016-12"
-    endDate: "2019-05"
+    startDate: "2016-12-01"
+    endDate: "2019-05-01"
     summary: Enhanced a patient portal for over 100,000 users and created a streaming ingestion solution for electronic health records. Developed CI/CD pipelines for AI apps running on Kubernetes.
     highlights:
       - Contributed to the development of an enterprise-scale patient portal application, enhancing system performance and user accessibility for over 100,000 active users
@@ -114,8 +112,8 @@ work:
 
   - position: Application Engineer
     name: Built Technologies
-    startDate: "2015-08"
-    endDate: "2016-12"
+    startDate: "2015-08-01"
+    endDate: "2016-12-01"
     summary: Transitioned a monolithic web application to a microservices architecture on AWS using Kinesis and Lambda. Updated legacy web app with responsive styling.
     highlights:
       - Facilitated the transition from a monolithic web application to a highly scalable and loosely coupled microservices architecture, dramatically improving system modularity, scalability, and resilience
@@ -131,8 +129,8 @@ work:
 
   - position: Software Developer
     name: Communication Components
-    startDate: "2013-07"
-    endDate: "2015-08"
+    startDate: "2013-07-01"
+    endDate: "2015-08-01"
     summary: Designed and implemented a caching solution, reducing request times from 4s to under 100ms.
     highlights:
       - Created online printing service and e-commerce platform allowing users to design and purchase signage, billboards, and other large-format print products
@@ -147,8 +145,8 @@ work:
 
   - position: Software Developer
     name: Deloitte
-    startDate: "2012-07"
-    endDate: "2013-07"
+    startDate: "2012-07-01"
+    endDate: "2013-07-01"
     highlights:
       - Worked with clients to design and build a cross-platform mobile application for restaurant management and reservations
     # Additional data not in JSON Resume schema
@@ -188,20 +186,21 @@ skills:
 education:
   - studyType: Master of Computer Science
     institution: University of Illinois Urbana-Champaign
-    startDate: "2019"
-    endDate: "2021"
+    startDate: "2019-01-01"
+    endDate: "2021-01-01"
     area: Computer Science
 
   - studyType: Bachelor of Science
     institution: University of Southern Mississippi
-    startDate: "2008"
-    endDate: "2012"
+    startDate: "2008-01-01"
+    endDate: "2012-01-01"
     area: Computer Science
 
 projects:
   - name: RadTimer
+    # startDate: "2024-04-01"
+    # endDate: "2024-04-01"
+    description: ""
     url: https://salish.dev/apps/radtimer
     highlights:
       - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
-    # Additional data not in JSON Resume schema
-    role: Creator

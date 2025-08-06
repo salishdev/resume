@@ -7,50 +7,54 @@
 % Contact Information
 %----------------------------------------------------------------------------------------
 
+
+
 \begin{document}
 
-\begingroup
-
-\vspace*{-2em}
-{\Huge \textbf{<% name %>}} \hfill
-\vspace*{-1em}
-<%#contact.email%>\normalsize{\href{mailto:<% contact.email %>}{<% contact.email %>}<%/contact.email%> %
-<%#contact.website%>| \href{https://<% contact.website %>}{<% contact.website %>}<%/contact.website%> %
-<%#contact.phone%>| \href{tel:<% contact.phone_clean %>}{<% contact.phone %>}<%/contact.phone%> %
-<%#contact.github%>| \href{https://<% contact.github %>}{<% contact.github %>}<%/contact.github%> %
-<%#contact.linkedin%>| \href{https://<% contact.linkedin %>}{<% contact.linkedin %>}}<%/contact.linkedin%> %
-\nameskip\break
-\endgroup
+<%# basics %>
+  \begingroup
+  \vspace*{-2em}
+  {\Huge \textbf{<% name %>}} \hfill
+  \vspace*{-1em}
+  <%#email%>\normalsize{\href{mailto:<% email %>}{<% email %>} %<%/email%>
+  <%#url%>\contactSep \href{<% url %>}{<% urlLabel %>} %<%/url%>
+% <%#phone%>\contactSep \href{tel:<% phoneClean %>}{<% phone %>} %<%/phone%>
+  <%#profiles%>
+    \contactSep \href{<% url %>}{<% network %>} %
+  <%/profiles%>}
+  \nameskip\break
+  \endgroup
+<%/ basics %>
 
 
 %----------------------------------------------------------------------------------------
 % Professional Summary
 %----------------------------------------------------------------------------------------
 
-<%#summary%>
+<%#basics.summary%>
 
 % \begin{rSection}{Professional Summary}
   <%.%>
 % \end{rSection}
 
-<%/summary%>
+<%/basics.summary%>
 
 %----------------------------------------------------------------------------------------
 % Work Experience
 %----------------------------------------------------------------------------------------
-<%#experience.length%>
+<%#work.length%>
   \begin{rSection}{Work Experience}
 
-    <%#experience%>
-      \begin{rWorkHistoryItem}{<% position %>}{<% company %>}{<% duration %>}
-        <%#accomplishments%>
+    <%#work%>
+      \begin{rWorkHistoryItem}{<% position %>}{<% name %>}{<% duration %>}
+        <%#highlights%>
           \item <%.%>
-        <%/accomplishments %>
+        <%/highlights %>
       \end{rWorkHistoryItem}
-    <%/experience%>
+    <%/work%>
 
   \end{rSection}
-<%/experience.length%>
+<%/work.length%>
 
 %----------------------------------------------------------------------------------------
 % Skills
@@ -59,7 +63,7 @@
 <%#skills.length%>
   \begin{rSection}{Skills}
     <%#skills%>
-      \begin{rSkillItem}{<% category %>}{<% items %>}
+      \begin{rSkillItem}{<% name %>}{<% keywords %>}
       \end{rSkillItem}
     <%/skills%>
     \vspace{0.25em}
@@ -75,7 +79,7 @@
   \begin{rSection}{Education}
 
     <%#education%>
-      \begin{rEducationItem}{<% degree %>}{<% institution %>}{<% duration %>}
+      \begin{rEducationItem}{<% studyType %>}{<% institution %>}{<% duration %>}
       \end{rEducationItem}
     <%/education%>
 
@@ -90,11 +94,11 @@
   \begin{rSection}{Projects}
 
     <%#projects%>
-      \begin{rWorkHistoryItem}{<% role %>}{<% name %>}{<% duration %>}
-        <%#accomplishments%>
+      \begin{rProjectItem}{\href{<% url %>}{<% name %>}}{<% duration %>}
+        <%#highlights%>
           \item <%.%>
-        <%/accomplishments %>
-      \end{rWorkHistoryItem}
+        <%/highlights %>
+      \end{rProjectItem}
     <%/projects%>
 
   \end{rSection}
