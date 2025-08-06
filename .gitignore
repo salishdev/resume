@@ -9,6 +9,7 @@ node_modules/
 *.toc
 *.bbl
 *.blg
+*.tex
 *.fdb_latexmk
 *.fls
 *.synctex.gz
