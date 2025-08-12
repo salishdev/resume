@@ -25,10 +25,14 @@ function main() {
   const template = readFileSync("./latex/resume.tex.mustache", "utf8");
   const rendered = Mustache.render(template, mapData(data));
 
-  // Write output
+  // Write LaTeX output
   writeFileSync("./latex/resume.tex", rendered);
 
+  // Write JSON output
+  writeFileSync("./data/resume.json", JSON.stringify(data, null, 2));
+
   console.log("✓ Rendered resume.tex from resume.yaml and resume.tex.mustache");
+  console.log("✓ Converted resume.yaml to resume.json");
   return 0;
 }
 
