@@ -1,0 +1,36 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t resume-builder .
+
+      - name: Extract resume files
+        run: |
+          CID=$(docker create resume-builder)
+          docker cp "$CID:/data/resume.pdf" resume.pdf
+          docker cp "$CID:/data/resume.json" resume.json
+          docker rm "$CID"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
+        with:
+          files: |
+            resume.pdf
+            resume.json
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
