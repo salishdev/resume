@@ -33,6 +33,7 @@ WORKDIR /data
 
 # Copy rendered latex files from previous stage
 COPY --from=renderer /app/latex/ ./
+COPY --from=renderer /app/data/resume.json .
 
 # Generate PDF
 RUN lualatex --interaction=nonstopmode --file-line-error resume.tex
