@@ -5,8 +5,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    # only run on main branch
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.ref_type == 'tag'
 
     steps:
       - name: Checkout repository
