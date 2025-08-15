@@ -2,7 +2,8 @@
 node_modules/
 .DS_Store
 
-*.pdf
+resume.pdf
+resume.json
 *.aux
 *.log
 *.out

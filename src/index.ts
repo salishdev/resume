@@ -91,7 +91,7 @@ function mapData(data: any): any {
       ...education,
       duration: formatDuration(education.startDate, education.endDate, "year"),
     })),
-    projects: data.projects.map((project: any) => ({
+    projects: data.projects?.map((project: any) => ({
       ...project,
       duration: formatDuration(project.startDate, project.endDate, "monthYear"),
     })),

@@ -3,7 +3,7 @@ basics:
   label: Fullstack Software Engineer
   email: jeremy@salish.dev
   url: https://salish.dev
-  summary: Fullstack Software Engineer and Team Leader with 14 years of experience developing scalable apps and services for the web and mobile.
+  summary: Fullstack Software Engineer and Team Leader with 15 years of experience developing scalable apps and services for the web and mobile.
   location:
     city: Seattle
     region: WA
@@ -23,12 +23,14 @@ work:
     summary: TODO Proident labore labore qui aliquip aute labore anim qui ipsum cupidatat deserunt aliqua.
     highlights:
       - Exercitation nostrud dolor ad ullamco elit incididunt qui sint mollit sint aliquip adipisicing incididunt reprehenderit ad.
-      - Dolor proident aliqua non occaecat sit cupidatat non non sint qui esse cupidatat ullamco et ut.
-      - Commodo voluptate proident Lorem non et do amet voluptate irure excepteur enim nulla laboris dolore.
     # Additional data not in JSON Resume schema
     technologies:
       - AWS
       - GraphQL
+      - Typescript
+      - Node.js
+      - Next.js
+      - Express
       - Sentry
       - Datadog
 
@@ -37,8 +39,7 @@ work:
     startDate: "2024-04-01"
     summary: Designed, developed, published, and marketed productivity apps for iOS and macOS
     highlights:
-      - Worked with clients to develop custom web solutions, improving user experience and functionality and delivering high-quality web projects on time and within budget
-      - "Published native macOS app to the App Store. TODO: success metrics, purchases, etc"
+      - Building innovative AI-powered native productivity tools for iOS and macOS
     # Additional data not in JSON Resume schema
     technologies:
       - Swift
@@ -195,12 +196,11 @@ education:
     startDate: "2008-01-01"
     endDate: "2012-01-01"
     area: Computer Science
-
-projects:
-  - name: RadTimer
-    # startDate: "2024-04-01"
-    # endDate: "2024-04-01"
-    description: ""
-    url: https://salish.dev/apps/radtimer
-    highlights:
-      - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
+# projects:
+#   - name: RadTimer
+#     # startDate: "2024-04-01"
+#     # endDate: "2024-04-01"
+#     description: ""
+#     url: https://salish.dev/apps/radtimer
+#     highlights:
+#       - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
