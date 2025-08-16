@@ -22,14 +22,6 @@ jobs:
         run: |
           ls -la build/resume.json build/resume.pdf
 
-      - name: Trigger deploy action
-        uses: peter-evans/repository-dispatch@v3
-        if: github.ref_type == 'tag'
-        with:
-          token: ${{ secrets.SALISH_DEV_TOKEN }}
-          repository: salishdev/salish.dev
-          event-type: deploy
-
       - name: Create Release
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
@@ -37,3 +29,11 @@ jobs:
           files: |
             build/resume.pdf
             build/resume.json
+
+      - name: Trigger deploy action
+        uses: peter-evans/repository-dispatch@v3
+        if: github.ref_type == 'tag'
+        with:
+          token: ${{ secrets.SALISH_DEV_TOKEN }}
+          repository: salishdev/salish.dev
+          event-type: deploy

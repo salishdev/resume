@@ -77,6 +77,10 @@ function mapData(data: any): any {
       ...data.basics,
       urlLabel: data.basics?.url?.replace(/^https?:\/\//, ""),
       phoneClean: data.basic?.phone?.replace(/\D/g, ""),
+      profiles: data.basics.profiles.map((profile: any) => ({
+        ...profile,
+        urlLabel: profile.url?.replace(/^https?:\/\//, ""),
+      })),
     },
     work: data.work.map((work: any) => ({
       ...work,
