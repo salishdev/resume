@@ -1,32 +1,31 @@
-# name: Build Resume
+name: Build Resume
 
-# on: push
+on: push
 
-# jobs:
-#   build:
-#     if: github.ref == 'refs/heads/main' || github.ref_type == 'tag'
-#     runs-on: ubuntu-latest
-#     permissions:
-#       contents: write
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main' || github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
-#     steps:
-#       - name: Checkout repository
-#         uses: actions/checkout@v4
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-#       - name: Build Docker image
-#         run: docker build -t resume-builder .
+      - name: Build resume
+        run: |
+          chmod +x scripts/build.sh
+          ./scripts/build.sh
 
-#       - name: Extract resume files
-#         run: |
-#           CID=$(docker create resume-builder)
-#           docker cp "$CID:/data/resume.pdf" resume.pdf
-#           docker cp "$CID:/data/resume.json" resume.json
-#           docker rm "$CID"
+      - name: Verify build artifacts
+        run: |
+          ls -la resume.json resume.pdf
 
-#       - name: Create Release
-#         uses: softprops/action-gh-release@v2
-#         if: github.ref_type == 'tag'
-#         with:
-#           files: |
-#             resume.pdf
-#             resume.json
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
+        with:
+          files: |
+            resume.pdf
+            resume.json
