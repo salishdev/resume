@@ -20,20 +20,12 @@ jobs:
 
       - name: Verify build artifacts
         run: |
-          ls -la public/resume.json public/resume.pdf
+          ls -la build/resume.json build/resume.pdf
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
           files: |
-            public/resume.pdf
-            public/resume.json
-
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        if: github.ref_type == 'tag'
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=salish-dev
+            build/resume.pdf
+            build/resume.json

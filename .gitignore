@@ -2,8 +2,8 @@
 node_modules/
 .DS_Store
 
-resume.pdf
-resume.json
+build/
+
 *.aux
 *.log
 *.out
