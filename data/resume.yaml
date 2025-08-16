@@ -20,10 +20,14 @@ work:
   - position: Software Engineer
     name: Lululemon
     startDate: "2024-10-01"
-    summary: TODO Proident labore labore qui aliquip aute labore anim qui ipsum cupidatat deserunt aliqua.
+    summary: Build and support middle tier APIs for product catalog on e-commerce platform
     highlights:
-      - Exercitation nostrud dolor ad ullamco elit incididunt qui sint mollit sint aliquip adipisicing incididunt reprehenderit ad.
-    # Additional data not in JSON Resume schema
+      - Designed and maintained scalable GraphQL and REST APIs powering the global product catalog, enabling real-time product availability
+      # - Improved system reliability by implementing end-to-end observability with Sentry and Datadog, including structured logging, performance dashboards, and automated alerts
+      # - Reduced API error rates and latency by optimizing Node.js middle-tier services, caching product metadata, and eliminating redundant downstream calls
+      # - Led initiatives to instrument AWS Lambda–based services with CloudWatch and X-Ray tracing, ensuring visibility into request flow and dependency bottlenecks
+      # - Partnered with cross-functional teams to integrate new product data sources into Next.js-driven customer experiences, improving catalog accuracy and freshness
+      - Enhanced developer productivity by contributing to shared TypeScript utilities, CI/CD pipelines, and documentation for service integration patterns
     technologies:
       - AWS
       - GraphQL
@@ -37,9 +41,9 @@ work:
   - position: Founder
     name: Astere Software
     startDate: "2024-04-01"
-    summary: Designed, developed, published, and marketed productivity apps for iOS and macOS
+    summary: Building innovative AI-powered native productivity tools for iOS and macOS
     highlights:
-      - Building innovative AI-powered native productivity tools for iOS and macOS
+      - Designed, developed, published, and marketed AI-powered productivity apps for iOS and macOS
     # Additional data not in JSON Resume schema
     technologies:
       - Swift
