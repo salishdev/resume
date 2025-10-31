@@ -1,9 +1,9 @@
 basics:
   name: Jeremy Jones
-  label: Fullstack Software Engineer
+  label: Fullstack Cross-platform Product Engineer
   email: jeremy@salish.dev
   url: https://salish.dev
-  summary: Fullstack Software Engineer and Team Leader with 15 years of experience developing scalable apps and services for the web and mobile.
+  summary: Fullstack Cross-platform Product Engineer with 15 years of experience developing fine apps and services for the web, mobile, and desktop.
   location:
     city: Seattle
     region: WA
@@ -20,62 +20,52 @@ work:
   - position: Software Engineer
     name: Lululemon
     startDate: "2024-10-01"
-    summary: Build and support middle tier APIs for product catalog on e-commerce platform
+    summary: Build and support product catalog APIs for e-commerce platform, enabling seamless experiences across web and mobile.
     highlights:
-      - Designed and maintained scalable GraphQL and REST APIs powering the global product catalog, enabling real-time product availability
-      # - Improved system reliability by implementing end-to-end observability with Sentry and Datadog, including structured logging, performance dashboards, and automated alerts
-      # - Reduced API error rates and latency by optimizing Node.js middle-tier services, caching product metadata, and eliminating redundant downstream calls
-      # - Led initiatives to instrument AWS Lambda–based services with CloudWatch and X-Ray tracing, ensuring visibility into request flow and dependency bottlenecks
-      # - Partnered with cross-functional teams to integrate new product data sources into Next.js-driven customer experiences, improving catalog accuracy and freshness
-      - Enhanced developer productivity by contributing to shared TypeScript utilities, CI/CD pipelines, and documentation for service integration patterns
+      - Designed and maintained scalable GraphQL and REST APIs powering the global product catalog, enabling real-time product catalog availability and seamless experiences across web and mobile
+      - Improved system observability by implementing end-to-end monitoring with Datadog, including structured logging, performance dashboards, and automated alerts
+      - Enhanced cross-functional collaboration to integrate new product data sources into web and native app experiences
     technologies:
-      - AWS
-      - GraphQL
+      - React
       - Typescript
       - Node.js
-      - Next.js
-      - Express
-      - Sentry
+      - GraphQL
+      - AWS
       - Datadog
 
   - position: Founder
     name: Astere Software
     startDate: "2024-04-01"
-    summary: Building innovative AI-powered native productivity tools for iOS and macOS
+    summary: Building innovative AI-powered macOS and iOS productivity tools using SwiftUI, AppKit, and React, with full ownership from concept to market.
     highlights:
-      - Designed, developed, published, and marketed AI-powered productivity apps for iOS and macOS
-    # Additional data not in JSON Resume schema
+      - Designed, developed, published, and marketed AI-powered productivity apps for macOS and iOS leveraging Swift, SwiftUI, and AppKit
+      - Led product design and technical architecture to deliver seamless, performant, and user-friendly native applications
     technologies:
-      - Swift
-      - SwiftUI
-      - iOS
-      - macOS
-      - Next.js
       - React
       - Typescript
-      - GraphQL
+      - Swift
+      - SwiftUI
+      - AppKit
+      - Rust
 
   - position: Founding Software Engineer
     name: Majr
     startDate: "2021-11-01"
     endDate: "2024-04-01"
-    summary: Conceptualized, architected, and built the company's core technology and product across multiple endpoints including web and mobile
+    summary: Conceptualized, architected, and built the company's core technology and product across multiple endpoints including web and mobile, emphasizing cross-platform delivery and architectural leadership.
     highlights:
-      - Led the development of a full stack authoring canvas, enabling artists to craft and share their stories on an immersive mobile platform
-      - Developed and maintained robust GraphQL API including schemas, resolvers, and queries, surfacing a rich data model in real-time to mobile and web endpoints
-      - Designed and deployed scalable cloud infrastructure using DevOps best practices and modern infrastructure as code tools
+      - Led development of a full stack authoring canvas, enabling artists to craft and share stories on an immersive mobile platform using SwiftUI and React
+      - Delivered cohesive and polished user experiences across web and iOS, driving product adoption and engagement
+      - Designed and deployed scalable APIs on cloud infrastructure using DevOps best practices and modern IaC tools
       - Architected a video-on-demand streaming platform with custom encoding pipelines
-    # Additional data not in JSON Resume schema
     technologies:
-      - React
-      - Typescript
-      - GraphQL
-      - NodeJS
-      - Prisma
-      - RedwoodJS
       - AWS
       - Swift
-      - iOS
+      - SwiftUI
+      - React
+      - Typescript
+      - NodeJS
+      - UIKit
 
   - position: Staff Software Engineer
     name: HCA Healthcare
@@ -86,16 +76,14 @@ work:
       - Headed the development of a workforce planning application, successfully deploying to the enterprise and replacing tedious and error-prone processes
       - Engineered a comprehensive data platform, architecting robust data pipelines from on-premises data warehouse to cloud data lake, enabling efficient application workloads, and advanced analytics and data science capabilities
       - Created a GraphQL API to expose HR data to internal consumers, aggregating multiple sources under a single endpoint and enabling self-service and discoverability, reducing ad hoc requests and one-off reports
-    # Additional data not in JSON Resume schema
     technologies:
-      - React
-      - Typescript
+      - Azure
+      - Go
       - GraphQL
       - Node.js
-      - Prisma
-      - Python
-      - Azure
+      - React
       - Spark
+      - Typescript
 
   - position: Senior Software Engineer
     name: HCA Healthcare
@@ -103,17 +91,15 @@ work:
     endDate: "2019-05-01"
     summary: Enhanced a patient portal for over 100,000 users and created a streaming ingestion solution for electronic health records. Developed CI/CD pipelines for AI apps running on Kubernetes.
     highlights:
-      - Contributed to the development of an enterprise-scale patient portal application, enhancing system performance and user accessibility for over 100,000 active users
-      - Created a streaming ingestion solution for parsing and routing electronic health records from hospitals across the US
+      - Contributed to development of an enterprise-scale patient portal application, enhancing system performance and user accessibility for over 100,000 active users
+      - Created a streaming ingestion solution for parsing and routing electronic health records from medical facilities across the US
       - Migrated legacy APIs to GraphQL to reduce server load and improve maintainability
-      - Developed CI/CD pipelines, facilitating seamless deployments to both on-premises and cloud infrastructure
-    # Additional data not in JSON Resume schema
     technologies:
-      - Python
+      - AI
       - DevOps
-      - Scala
-      - AI/ML
       - Kubernetes
+      - Python
+      - Scala
 
   - position: Application Engineer
     name: Built Technologies
@@ -121,16 +107,15 @@ work:
     endDate: "2016-12-01"
     summary: Transitioned a monolithic web application to a microservices architecture on AWS using Kinesis and Lambda. Updated legacy web app with responsive styling.
     highlights:
-      - Facilitated the transition from a monolithic web application to a highly scalable and loosely coupled microservices architecture, dramatically improving system modularity, scalability, and resilience
-      - Retrofitted legacy web app with updated views and responsive styling, making mobile access feasible and saving the company from a costly rewrite
-    # Additional data not in JSON Resume schema
+      - Facilitated transition from monolithic web app to scalable microservices architecture, improving modularity and resilience
+      - Retrofitted legacy web app with updated views and responsive styling, enabling mobile access and avoiding costly rewrite
     technologies:
-      - React
-      - PHP
-      - Microservices
       - AWS
+      - Go
       - Kinesis
       - Lambda
+      - Microservices
+      - React
 
   - position: Software Developer
     name: Communication Components
@@ -139,14 +124,13 @@ work:
     summary: Designed and implemented a caching solution, reducing request times from 4s to under 100ms.
     highlights:
       - Created online printing service and e-commerce platform allowing users to design and purchase signage, billboards, and other large-format print products
-    # Additional data not in JSON Resume schema
     technologies:
-      - HTML
-      - CSS
-      - Typescript
-      - C#
       - ASP.NET
+      - C#
+      - CSS
+      - HTML
       - SQL Server
+      - Typescript
 
   - position: Software Developer
     name: Deloitte
@@ -154,43 +138,45 @@ work:
     endDate: "2013-07-01"
     highlights:
       - Worked with clients to design and build a cross-platform mobile application for restaurant management and reservations
-    # Additional data not in JSON Resume schema
     technologies:
-      - HTML
-      - CSS
-      - Javascript
-      - C#
       - ASP.NET
+      - C#
+      - CSS
+      - HTML
+      - Javascript
       - SQL Server
 
 skills:
   - name: Programming Languages
     keywords:
       - Typescript
+      - Swift
+      - Rust
       - HTML
       - CSS
       - SQL
-      - Bash
-      - Python
   - name: Libraries & Frameworks
     keywords:
+      - SwiftUI
+      - UIKit
+      - AppKit
       - React
-      - Redux
       - Tailwind
       - Node.js
-      - GraphQL
-      - Prisma
-  - name: Tools & Platforms
-    keywords:
-      - AWS
-      - Docker
-      - Terraform
-      - PostgreSQL
-      - Apollo
+  # - name: Tools & Platforms
+  #   keywords:
+  #     - AWS
+  #     - Xcode
+  #     - Xcode Cloud
+  #     - Docker
+  #     - Performance Tuning
+  #     - Privacy-first Design
+  #     - GCD
+  #     - Concurrency
 
 education:
   - studyType: Master of Computer Science
-    institution: University of Illinois Urbana-Champaign
+    institution: (Hiatus) University of Illinois Urbana-Champaign
     startDate: "2019-01-01"
     endDate: "2021-01-01"
     area: Computer Science
@@ -201,10 +187,18 @@ education:
     endDate: "2012-01-01"
     area: Computer Science
 # projects:
-#   - name: RadTimer
+#   - name: LunarTask
+#     description: macOS app that uses AI to help you achieve your goals productivity. Built with SwiftUI and integrates with web APIs.
+#     highlights:
+#       - Designed and implemented a performant SwiftUI-based macOS app with menu bar integration and CoreGraphics rendering
+#       - Demonstrated concurrency with structured tasks and async data pipelines
+#       - Bridged macOS and web ecosystems via React-based companion dashboard
+# #   - name: RadTimer
 #     # startDate: "2024-04-01"
 #     # endDate: "2024-04-01"
-#     description: ""
-#     url: https://salish.dev/apps/radtimer
-#     highlights:
-#       - Action verb + what you did + reason, outcome or quantified results. Talk about technologies used
+#     description: Ridiculously simple timer for your macOS menu-bar timer app that displays a radial visual countdown to help users better visualise elapsed and remaining time.
+#     # url: https://salish.dev/apps/radtimer
+#     # highlights:
+#     #   - Developed a lightweight macOS menu-bar timer using Swift & SwiftUI to present a continuously updating radial visual countdown, enabling users to better visualise time passage and stay on track.
+#     #   - Designed and implemented a feature-rich Pomodoro workflow (configurable work/break intervals) grounded in executive-function research (e.g., individuals with ADHD often struggle with time perception and “time blindness”)  [oai_citation:0‡PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6556068/?utm_source=chatgpt.com), increasing user engagement and self-regulation of tasks.
+#     #   - Created a polished UX by integrating Core Animation (and optionally Metal/Quartz as needed) for smooth visual feedback in the menu bar, plus ensured low resource overhead (idle when inactive) — resulting in a productivity tool that blends into a developer’s workflow without distraction.
